@@ -1,8 +1,8 @@
 ---
 slug: test-blog-post
 title: DeFi Basics
-authors: anthony
-tags: [hello, docusaurus]
+authors: autist
+tags: [defi, basics]
 ---
 
 I will be covering the basics of DeFi.
