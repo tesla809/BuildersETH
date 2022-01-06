@@ -1,5 +1,45 @@
 # Website
 
+## Why?
+
+I want to create something like [beta.reactjs.org](https://beta.reactjs.org/) for web3 and Ethereum Development
+
+## Things to do
+
+### Technical
+
+- [ ] Add more memes
+- [ ] Add codesandbox/sandpack
+- [ ] Add typescript to sandpack
+- [ ] Add solc to sandpack
+- [ ] Figure out how to add assertions in client
+- [ ] decide between monaco or CodeMirror 6
+- [ ] If CodeMirror 6 add [Solidty language support](https://github.com/alincode/codemirror-solidity)
+- [ ] Figure out how to add xTerm.js
+- [ ] Wire inputs / outputs in xTerm.js
+- [ ] Connect xterm.js to code editor some how
+- [ ] figure out how to send instructions from both web3JS and Ethersjs
+- [ ] Start a DAO because why not?
+- [ ] Solve P vs NP
+- [ ] ... profit
+- [ ] retire to 3rd world country
+
+### Technical
+
+- [ ] Create project to serve as learning base. Maybe Kek NFTs like [CryptoPepes](https://cryptopepes.lol/)
+- [ ] Add basic solidity steps - beginner
+- [ ] Add web3js / etherjs steps
+
+### Research
+
+- [ ] See how [BUIDLGUIDL](https://buidlguidl.com/) does it.
+
+### Community
+
+- [ ] Get more fellow autists to get down and buidl.
+
+## boilerplate mumbo jumbo
+
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
