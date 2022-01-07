@@ -13,8 +13,8 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "BuildersEth", // Usually your GitHub org/user name.
+  projectName: "BuildersETH", // Usually your repo name.
 
   presets: [
     [
