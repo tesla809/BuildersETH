@@ -2,34 +2,8 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Tutorial Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**Aim:** To develop in a public fashion the art and science of programmable blockchains. We aim to turn an newbie into an expert.
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npm init docusaurus@latest my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and displays your changes.
+This is an ongoing project and will evolve over time.
