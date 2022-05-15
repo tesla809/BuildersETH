@@ -16,9 +16,11 @@
   "dependencies": {
     "@codesandbox/sandpack-client": "^0.10.11",
     "@codesandbox/sandpack-react": "^0.10.11",
-    "@docusaurus/core": "2.0.0-beta.14",
-    "@docusaurus/preset-classic": "2.0.0-beta.14",
-    "@docusaurus/types": "^2.0.0-beta.14",
+    "@docusaurus/core": "^2.0.0-beta.20",
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.20",
+    "@docusaurus/preset-classic": "^2.0.0-beta.20",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.20",
+    "@docusaurus/types": "^2.0.0-beta.20",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "hast-util-is-element": "1.1.0",
@@ -26,7 +28,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rehype-katex": "5",
-    "remark-math": "3"
+    "remark-math": "^3.0.1",
+    "remark-mdx": "1.6.21"
   },
   "browserslist": {
     "production": [
