@@ -8,14 +8,17 @@ I want to create something like [beta.reactjs.org](https://beta.reactjs.org/) fo
 
 ### Technical
 
-- [ ] Add more memes
+- [x] Add Katex for Math equations
+- [x] Add Solidity syntax highlighting
+- [x] Add TypeScript syntax highlighting
+- [x] Scaffoled some basics items
 - [x] Add codesandbox/sandpack
 - [ ] Add typescript to sandpack
 - [ ] Add solc to sandpack
 - [ ] Figure out how to add assertions in client
 - [x] decide between monaco or CodeMirror 6
   - [x] CodeMirror Wins! [Great assessment here](https://blog.replit.com/code-editors)
-  - [ ] If CodeMirror 6 add [Solidty language support](https://github.com/alincode/codemirror-solidity)
+  - [x] If CodeMirror 6 add [Solidty language support](https://github.com/alincode/codemirror-solidity)
 - [ ] Figure out how to add xTerm.js
   - [ ] Wire inputs / outputs in xTerm.js
   - [ ] Connect xterm.js to code editor some how
