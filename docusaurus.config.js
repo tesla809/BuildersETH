@@ -9,15 +9,17 @@ const rehypeKatex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  title: "Web3 Crypto Dev",
+  tagline: "Learn Web3 from Zero to Mastery",
+  url: " https://tesla809.github.io/BuildersETH/",
+  baseUrl: "/BuildersETH/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "BuildersEth", // Usually your GitHub org/user name.
+  organizationName: "BuildersETH.github.io", // Usually your GitHub org/user name.
   projectName: "BuildersETH", // Usually your repo name.
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
   stylesheets: [
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
@@ -77,7 +79,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "Home",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
@@ -87,7 +89,7 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Tutorials",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
@@ -101,11 +103,15 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Content",
             items: [
               {
-                label: "Tutorial",
+                label: "Tutorials",
                 to: "/docs/intro",
+              },
+              {
+                label: "Blog",
+                to: "/blog",
               },
             ],
           },
@@ -114,7 +120,7 @@ const config = {
             items: [
               {
                 label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                href: "https://stackoverflow.com/questions/tagged/solidity",
               },
               {
                 label: "Discord",
@@ -122,7 +128,7 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/Tesla809",
               },
             ],
           },
@@ -130,17 +136,13 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/tesla809/BuildersETH",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
