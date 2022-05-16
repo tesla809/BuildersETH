@@ -12,7 +12,7 @@ const config = {
   title: "Web3 Crypto Dev",
   tagline: "Learn Web3 from Zero to Mastery",
   url: " https://tesla809.github.io/BuildersETH/",
-  baseUrl: "/BuildersETH/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
