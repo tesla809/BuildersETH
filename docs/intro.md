@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Tutorials Overview
+# Overview
 
 ## Solidity
 
@@ -31,6 +31,8 @@ Consider this more of a series of study notes than a definitive guide. However, 
 ## Contact
 
 Have any suggestions, questions, comments, or requests for content?
+
+Found an error?
 
 Feel free to message contact@web3cryptodev.com
 
