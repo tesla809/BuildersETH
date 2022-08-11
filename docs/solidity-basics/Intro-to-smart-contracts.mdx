@@ -1,0 +1,158 @@
+---
+sidebar_position: 3
+---
+
+# Introduction to Smart Contracts in Solidity
+
+<div id="terminal"></div>
+<script>
+  var term = new Terminal(); term.open(document.getElementById('terminal'));
+  term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ')
+</script>
+
+## Smart Contract History
+
+Smart contracts are scripts that run on programmable blockchains. For Ethereum based blockchains, the primary language is called Solidity.
+
+Think of smart contracts, or contracts for short, as classes in another object oriented language. However, why are they called contracts?
+
+The idea of [smart contracts came from Nick Szabo](https://nakamotoinstitute.org/the-idea-of-smart-contracts/) in 1997. [Szabo](https://www.youtube.com/watch?v=3FA3UjA0igY) strived to combine law and computation to advance the goals of the [cypherpunks](https://www.wired.com/1993/02/crypto-rebels/), a movement of computer enthsaists who aimed to leverage [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) to advance human freedoms. This will be covered in a future blog post.
+
+## Simple Description of Code
+
+Below, we see a sample smart contract. Its function is simple: it stores a number.
+
+There are two functions:
+
+- get() - returns the value stored in the program.
+- set() - updates the value stored in the program.
+
+Let's explore each line further.
+
+<Tabs>
+
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.16 <0.9.0;
+
+contract SimpleStorage {
+    uint storedData;
+
+    function set(uint x) public {
+        storedData = x;
+    }
+
+    function get() public view returns (uint) {
+        return storedData;
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+<Tabs>
+
+<TabItem value="sol" label="Solidity">
+
+## License
+
+```solidity
+// SPDX-License-Identifier: GPL-3.0
+```
+
+Every contract needs to specify the license which supports it.
+
+Licensing is essential because it stipulates how you can use a piece of code. Much of the open source software movement is based on legal innovations on very permissive licenses like [MIT License](https://choosealicense.com/licenses/mit/) and [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/).
+Licenses can help direct the project toward the creator's aims, like the freedom to remix, but only if the base code is open-sourced. Or a more accessible approach like "do what you want." Licensing is essential because, if used appropriately, it can limit the liability of the develper should something go wrong with the code.
+
+Most licenses in the crypto start are entirely open source. This allows for the reduction of headaches when dealing with code. If it is easy to deal with your code, more money may flow into it. This will be covered in another place, like a blog post.
+For now, know that licenses are essential, and when in doubt, use GPL-3.0.
+
+What if someone copies my code? We will cover this in another post. Remember that network effects, liquidity, and branding are defensible moats to your project.
+
+## Pragma - Define The Solidity Compiler Type
+
+```solidity
+pragma solidity >=0.4.16 <0.9.0;
+```
+
+Like all programming languages, Solidity is an evolving language. Over time there are updates, bugs fixes, and improvements that make the languages easier and safer to use.
+
+Thus, it is essential to specify the version of the language used. The language is compiled into EVM byte code which is then ran on the Etheruem Virtual Machine. Knowing which compiler to use allows this process to occur.
+
+## Contract Keyword
+
+```solidity
+contract SimpleStorage { ... }
+```
+
+Solidity is an object oriented language. This means that it uses something like classes to structure information. You can think of the key word `Contract` to be similar to `class` keyword in other programming languages like C, Java or JavaScript.
+
+## Public Variables
+
+```solidity
+...
+
+contract SimpleStorage {
+    uint storedData; // < Public variable accessible in state.
+    ...
+}
+```
+
+### Storage and costs
+
+`uint storedData` is a public variable. Because its declared in the top level scope, its added to storage.
+
+In Solidity, storage of data happens in the contract itself. It also costs money to store data. Why? The Ethereum blockchain is copied in many places. To deter spamming, any storage will inevitable incur a cost.
+
+### Data types
+
+Notice that the variable `storedData` is of datatype `uint` (`unsigned integer`). `Unsigned integers` are positive whole numbers. `signed integers` allow for negative numbers to exists.
+We will cover data type in a later module.
+
+## Functions
+
+Functions in Solidity are similar to Java. The function signature is comprised of the:
+
+- function keyword: `function`
+- function name: `set`
+- variable name and type: `uint x`
+- function modifier: `public` or `view`
+- optional return value type: `returns (uint)` like in`get()`
+
+### set
+
+```solidity
+contract SimpleStorage {
+    ...
+    function set(uint x) public {
+        storedData = x;
+    }
+    ...
+}
+```
+
+`set()` is a `public` function that takes in a parameter `uint x`. `public` functions can be accessed by anyone. Inside the function braces `{}` we have the piece of code that runs once `set()` is called.
+Here `storedData` is set to the value of `x` and updates our storage.
+
+### get
+
+```solidity
+contract SimpleStorage {
+    ...
+    function get() public view returns (uint) {
+        return storedData;
+    }
+    ...
+}
+```
+
+`get()` is a `public` function that returns an `uint` (unsigned integer). `returns (uint)` assures that this is the case and will expect an `uint` to be returned, else an error is thrown and the code will not compile.
+
+Here `storedData` is set to the value of `x` and updates our storage.
+
+</TabItem>
+</Tabs>
