@@ -124,7 +124,7 @@ const config = {
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.gg/PqVhBKxSKb",
               },
               {
                 label: "Twitter",
@@ -133,16 +133,24 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Web3",
             items: [
               {
-                label: "GitHub",
+                label: "web3cryptodev.eth",
+                href: "web3cryptodev.eth",
+              },
+              {
+                label: "web3cryptodev.dao",
+                href: "web3cryptodev.dao",
+              },
+              {
+                label: "Github Repo",
                 href: "https://github.com/tesla809/BuildersETH",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. Built with ❤️.`,
       },
       prism: {
         theme: lightCodeTheme,
