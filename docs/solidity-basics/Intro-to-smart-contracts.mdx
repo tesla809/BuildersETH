@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # Introduction to Solidity Smart Contracts
 
 ## Smart Contract History
@@ -23,13 +26,14 @@ There are two functions:
 
 Let's explore each line further.
 
-<Tabs>
+For reference, here is the logic for the same code in JavaScript and Python.
 
+<Tabs>
 <TabItem value="sol" label="Solidity">
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.4.16 <0.9.0;
+pragma solidity 0.8.13;
 
 contract SimpleStorage {
     uint storedData;
@@ -45,11 +49,47 @@ contract SimpleStorage {
 ```
 
 </TabItem>
+
+<TabItem value="js" label="JavaScript">
+
+```javascript
+class SimpleStorage {
+    let storedData;
+
+    // Setter function takes and stores x input
+    function set(x) {
+        storedData = x;
+    }
+
+    // Getter function returns storedData
+    function get() {
+        return storedData;
+    }
+}
+```
+
+</TabItem>
+
+<TabItem value="py" label="Python 3.6">
+
+```python
+// 2 spaces for indentation
+
+class simple_storage:
+    storedData;
+
+    """Setter function takes and stores x input"""
+    def set(x):
+      storedData = x;
+
+    """Getter function returns storedData"""
+    function get():
+      return storedData;
+}
+```
+
+</TabItem>
 </Tabs>
-
-<Tabs>
-
-<TabItem value="sol" label="Solidity">
 
 ## License
 
@@ -70,12 +110,17 @@ What if someone copies my code? We will cover this in another post. Remember tha
 ## Pragma - Define The Solidity Compiler Type
 
 ```solidity
-pragma solidity >=0.4.16 <0.9.0;
+pragma solidity 0.8.13;
 ```
 
 Like all programming languages, Solidity is an evolving language. Over time there are updates, bugs fixes, and improvements that make the languages easier and safer to use.
-sd
-Thus, it is essential to specify the version of the language used. The language is compiled into EVM byte code which is then ran on the Etheruem Virtual Machine. Knowing which compiler to use allows this process to occur.
+sd. Thus, it is essential to specify the version of the language used. The language is compiled into EVM byte code which is then ran on the Etheruem Virtual Machine. Knowing which compiler to use allows this process to occur.
+
+```solidity
+pragma solidity >=0.4.16 <0.9.0;
+```
+
+Such a broad scope for the compiler can result in errors and uncaught bugs since such a wide range eliminates the ability to use the correct compiler predictable across development environments. For example, one developer may have `0.8.10`, while another may have `0.5.5`.
 
 ## Contract Keyword
 
@@ -147,6 +192,3 @@ contract SimpleStorage {
 `get()` is a `public` function that returns an `uint` (unsigned integer). `returns (uint)` assures that this is the case and will expect an `uint` to be returned, else an error is thrown and the code will not compile.
 
 Here `storedData` is set to the value of `x` and updates our storage.
-
-</TabItem>
-</Tabs>
