@@ -6,6 +6,9 @@ Our goal is to create a running series covering Solidity and all things Web3 dev
 
 As a result of this, we will connect devs to devs and build a community around building, innovation and mutual help.
 
+See the website:
+[web3cryptodev.com](https://www.web3cryptodev.com/)
+
 ## Our mission
 
 **Easy to use**  
