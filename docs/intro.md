@@ -6,17 +6,17 @@ sidebar_position: 1
 
 ## Solidity
 
-**Our primary focus will be on Solidity.**
+**Our primary focus will be on creating practical content for Web3 developers.**
 
-The goal is to:
+We will start with Solidity and:
 
-- give an in-depth look into the language's primitives.
+- give an in-depth look into the Solidity primitives.
 - progress to show patterns often used in the web3 industry.
 - jump into deep dives around Solidity-based applications.
-- give the reader the proper context on when and where to use these tools.
+- give the reader the proper context on when and where to use certain tools for smart contract development.
 - Finally, relate to real-world projects which use these tools.
 
-As time progresses, we will increase the scope of our studies to other tools in web3. However, for focus, we will keep our attention on Solidity and its emerging patterns.
+As time progresses, we will increase the scope of our studies to other tools in web3.
 
 ## Side Quests: Math
 
