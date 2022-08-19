@@ -137,11 +137,11 @@ const config = {
             items: [
               {
                 label: "web3cryptodev.eth",
-                href: "web3cryptodev.eth",
+                href: "https://app.ens.domains/name/web3cryptodev.eth/details",
               },
               {
                 label: "web3cryptodev.dao",
-                href: "web3cryptodev.dao",
+                href: "https://ud.me/web3cryptodev.dao",
               },
               {
                 label: "Github Repo",
