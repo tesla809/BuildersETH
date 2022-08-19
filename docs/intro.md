@@ -30,11 +30,16 @@ Consider this more of a series of study notes than a definitive guide. However, 
 
 ## Contact
 
-Have any suggestions, questions, comments, or requests for content?
+Have any suggestions, questions, comments, or requests for content?  
+Feel free to open a Github [issue](https://github.com/tesla809/BuildersETH/issues).
 
-Found an error?
+Want to submit to the blog, lesson, lesson fix, or image/logo?  
+Submit a [github pull request](https://github.com/tesla809/BuildersETH/pulls).
 
-Feel free to message contact@web3cryptodev.com
+Want to contact the website admin directly?  
+Message: contact@web3cryptodev.com
+
+Any and all feedback is appreciated <3!
 
 ## Disclaimer
 
