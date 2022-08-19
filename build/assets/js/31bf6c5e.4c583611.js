@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbuilders_eth=self.webpackChunkbuilders_eth||[]).push([[6888],{7217:function(e){e.exports=JSON.parse('{"label":"wtf","permalink":"/blog/tags/wtf","allTagsPath":"/blog/tags","count":1}')}}]);
