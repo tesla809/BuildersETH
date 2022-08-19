@@ -53,16 +53,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/tesla809/BuildersETH/issues/",
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/tesla809/BuildersETH/issues",
           blogSidebarTitle: "All posts",
           blogSidebarCount: "ALL",
           remarkPlugins: [remarkMath],
@@ -129,6 +127,10 @@ const config = {
               {
                 label: "Twitter",
                 href: "https://twitter.com/Tesla809",
+              },
+              {
+                label: "Email",
+                href: "mailto: contact@web3cryptodev.com",
               },
             ],
           },
