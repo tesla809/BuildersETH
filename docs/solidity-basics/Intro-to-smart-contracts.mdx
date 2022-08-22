@@ -113,8 +113,7 @@ What if someone copies my code? We will cover this in another post. Remember tha
 pragma solidity 0.8.13;
 ```
 
-Like all programming languages, Solidity is an evolving language. Over time there are updates, bugs fixes, and improvements that make the languages easier and safer to use.
-sd. Thus, it is essential to specify the version of the language used. The language is compiled into EVM byte code which is then ran on the Etheruem Virtual Machine. Knowing which compiler to use allows this process to occur.
+Like all programming languages, Solidity is an evolving language. Over time there are updates, bugs fixes, and improvements that make the languages easier and safer to use. Thus, it is essential to specify the version of the language used. The language is compiled into EVM byte code which is then ran on the Etheruem Virtual Machine. Knowing which compiler to use allows this process to occur.
 
 ```solidity
 pragma solidity >=0.4.16 <0.9.0;
@@ -158,7 +157,7 @@ Functions in Solidity are similar to Java. The function signature is comprised o
 
 - function keyword: `function`
 - function name: `set`
-- variable name and type: `uint x`
+- variable type and name: `uint x`
 - function modifier: `public` or `view`
 - optional return value type: `returns (uint)` like in`get()`
 
@@ -192,3 +191,5 @@ contract SimpleStorage {
 `get()` is a `public` function that returns an `uint` (unsigned integer). `returns (uint)` assures that this is the case and will expect an `uint` to be returned, else an error is thrown and the code will not compile.
 
 Here `storedData` is set to the value of `x` and updates our storage.
+
+You can try to run the contract on [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.13+commit.abaa5c0e.js), an online IDE for smart contracts. Copy/paste the [Solidity](https://www.web3cryptodev.com/docs/solidity-basics/Intro-to-smart-contracts#simple-description-of-code) code from the top of this page, compile and deploy the contract.
