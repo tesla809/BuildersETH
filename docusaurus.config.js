@@ -166,6 +166,12 @@ const config = {
          */
         playgroundPosition: "bottom",
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
     }),
 };
 
