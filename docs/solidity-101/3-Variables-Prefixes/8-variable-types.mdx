@@ -1,0 +1,187 @@
+---
+sidebar_position: 7
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Variables Types Overview
+
+## Variables Overview
+
+Variables allow us to:
+
+- Store information to be referenced and manipulated in a computer program.
+- Label a data type with a descriptive name.
+- Specify under what conditions the data can be changed.
+- Specify the type of data that can be held.
+
+The variable's data is then used throughout your program. Variables make our programs more easily understood and clearer to your future self and other developers.
+
+Think of variables like boxes that hold information, and your program is like a large warehouse. Imagine trying to keep organized a whole warehouse of things without boxes or labels!
+
+Solidity has three different types of variable types. **The difference between each is in your ability can edit them after creation**:
+
+- Mutable variable
+- `const`
+- `immutable`
+
+<Tabs>
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract VariablesOverview {
+    // type, scope, variable name
+    string public my_name;
+    string public constant EXISTS = true;
+    string public immutable BIRTH_MONTH;
+
+    // set instructions
+    constructor(uint _birth_month) {
+        uint BIRTH_MONTH = _birth_month;
+    }
+}
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```javascript
+contract VariablesOverview {
+    let my_name;
+    const EXISTS = true;
+    const BIRTH_MONTH;  // immutable don't exist in JavaScript
+
+    // set instructions
+    constructor(_birth_month) {
+        BIRTH_MONTH = _birth_month;
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+## Mutable variables
+
+Unlike JavaScript, Solidity doesn't have a `let` keyword to express that a variable can be updated with another value later. Instead, its **mutability** is implied. Mutability is the ability to change, delete or update a piece of data. Think of it as being able to change what's inside of our labeled box in storage.
+
+For a mutable variable, we declare:
+
+- the data type
+- the scope
+- the variable's name
+
+We will cover data types and scope in the following two lessons.
+
+<Tabs>
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract VariablesOverview {
+    // type, scope, variable name
+    string public my_name;
+   // ...
+}
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```javascript
+class VariablesOverview {
+    let myName = '';
+    // ...
+}
+```
+
+</TabItem>
+</Tabs>
+
+Since Solidity is statically typed language, any variable updates MUST be of the same type as the variable declared. This is different to JavaScript, a dynamically-typed languages, where the varible's value is at assigned at runtime based on the current value.
+
+A [**runtime**](https://stackoverflow.com/questions/3900549/what-is-runtime) is software executed while your program is running. This includes instructions that you did not write, but are necessary to run your code properly.
+
+A compiler is a piece of software that translates code from a higher-level language to a lower-level language. In Solidity's case, our human-readable code is translated to EVM bytecode. We will have an overview of Ethereum's compiler in a future post.
+
+## `const`
+
+**CHANGE THIS**
+
+Like JavaScript, Solidity does have constant variables. Constants are variables that cannot be modified.
+
+Their value is hard coded. Just like JavaScript, the coding convention (aka best practice) is to captialize the variable and use underscores to seperate words.
+
+Another benifit of constants is that they can save gas costs. We will cover gas in a future post.
+
+<Tabs>
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract VariablesOverview {
+    // ...
+    string public constant EXISTS = true;
+    // ...
+}
+```
+
+</TabItem>
+
+<TabItem value="js" label="JavaScript">
+
+```javascript
+class VariablesOverview {
+    const EXISTS = true;
+    // ...
+}
+```
+
+</TabItem>
+</Tabs>
+
+## `immutable`
+
+`immutable` variables are like constants (`const`). `immutable` variable values can be set inside the `constructor` function but cannot be **modified** afterward.
+
+What is a constructor? Briefly, a constructor allows you to set or pass in the default parameters of a contract. For example, using an `immutable` gives you the:
+
+- flexibility to customize the initial start conditions for a contract.
+- guarantee that these cannot be updated.
+
+We will cover `constructor` in much more depth later.
+
+In JavaScript, there is no `immutable` primitive type. However, there are libraries which can help emulate immutability like [ImmutableJS](https://immutable-js.com/).
+
+### `immutable` Example Code
+
+<Tabs>
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract Immutable {
+    // coding convention to uppercase constant variables
+    uint public immutable MY_UINT;
+
+    constructor(uint _myUint) {
+        MY_ADDRESS = msg.sender;
+        MY_UINT = _myUint;
+    }
+}
+```
+
+</TabItem>
+</Tabs>
+
+To create the contract, we pass in the initial values for the constructor, which sets our immutable values.
