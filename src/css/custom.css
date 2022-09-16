@@ -6,13 +6,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #b3b0e8;
+  --ifm-color-primary-dark: #a4a0e3;
+  --ifm-color-primary-darker: #9590df;
+  --ifm-color-primary-darkest: #8581da;
+  --ifm-color-primary-light: #c2c0ed;
+  --ifm-color-primary-lighter: #d1d0f1;
+  --ifm-color-primary-lightest: #e1dff6;
   --ifm-code-font-size: 95%;
 }
 
@@ -25,6 +25,30 @@
 
 html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(37, 71, 194, 0.5);
+}
+
+html[data-theme="dark"] {
+  background-color: rgba(11, 1, 18, 0.5);
+  /* background-color: rgba(11, 1, 18, 0.5); */
+}
+
+html[data-theme="dark"] navbar {
+  background-color: rgba(11, 1, 18, 0.5);
+  /* background-color: rgba(11, 1, 18, 0.5); */
+}
+
+html[data-theme="light"] {
+  background-color: rgba(216, 199, 178, 0.5);
+  --ifm-color-primary: #645ed0;
+  --ifm-color-primary-dark: #a4a0e3;
+  --ifm-color-primary-darker: #9590df;
+  --ifm-color-primary-darkest: #8581da;
+  --ifm-color-primary-light: #c2c0ed;
+  --ifm-color-primary-lighter: #d1d0f1;
+  --ifm-color-primary-lightest: #e1dff6;
+}
+html[data-theme="light"] .navbar {
+  background-color: rgba(216, 199, 178, 0.5);
 }
 
 /* Math Fonts  */
