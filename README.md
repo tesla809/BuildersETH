@@ -2,7 +2,7 @@
 
 Learn Web3 development from Zero to Mastery.
 
-Our goal is to create a running series covering Solidity and all things Web3 development.
+**Our goal:** Create a running series of guides covering Solidity and all things Web3 development aimed at developers.
 
 As a result of this, we will connect devs to devs and build a community around building, innovation and mutual help.
 
@@ -25,17 +25,25 @@ Don't let the perfect be the enemy of the good. Shipping and improving via itera
 
 ## The Approach
 
-Move fast and break things. Content will be written and published quickly every weekday. Then we will solicit community feedback through [issues](https://github.com/tesla809/BuildersETH) and [pull requests](https://github.com/tesla809/BuildersETH/pulls) for fixes.
+Web3 changes fast. So, our content will be considered living documents that are intended to keep up with these changes. We will move fast and break things.
+
+Our writing approach will be:
+
+1. Write and published quickly, aiming for every weekday.
+2. Solicit community feedback through [issues](https://github.com/tesla809/BuildersETH) and [pull requests](https://github.com/tesla809/BuildersETH/pulls) for fixes, content suggestions, and content additions.
+3. Progressively expand the topics over time.
 
 The work is **NOT** perfect. Most of it needs heavy proofreading and will be edited over time.
 
 **The process will be:**  
 Build -> Write -> Publish -> Edit in public
 
+Our learning process will be similar to [the Feynman Method](https://blog.doist.com/feynman-technique/):  
+Play -> Learn -> Teach
+
 ## Contributions Wanted
 
-Have a topic you’d like to contribute or want to learn about? Feel free to open an issue:
-https://github.com/tesla809/BuildersETH/issues
+Have a topic you’d like to contribute or want to learn about? Feel free to open an [issue](https://github.com/tesla809/BuildersETH/issues).
 
 Want to submit to the blog, lesson, lesson fix, or image/logo?
 
