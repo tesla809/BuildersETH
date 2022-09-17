@@ -1,6 +1,4 @@
-# Web3CryptoDev 
-
-![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/tesla809/BuildersETH/)
+# Web3CryptoDev
 
 Learn Web3 development from Zero to Mastery.
 
@@ -10,6 +8,8 @@ As a result of this, we will connect devs to devs and build a community around b
 
 See the website:
 [web3cryptodev.com](https://www.web3cryptodev.com/)
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/tesla809/BuildersETH/)
 
 ## Our mission
 
