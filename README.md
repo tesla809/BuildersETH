@@ -25,13 +25,11 @@ Don't let the perfect be the enemy of the good. Shipping and improving via itera
 
 ## The Approach
 
-Move fast and break things. Content will be written and published quickly every weekday.
-
-Then we will solicit community feedback through [issues](https://github.com/tesla809/BuildersETH) and [pull requests](https://github.com/tesla809/BuildersETH/pulls) for fixes.
+Move fast and break things. Content will be written and published quickly every weekday. Then we will solicit community feedback through [issues](https://github.com/tesla809/BuildersETH) and [pull requests](https://github.com/tesla809/BuildersETH/pulls) for fixes.
 
 The work is **NOT** perfect. Most of it needs heavy proofreading and will be edited over time.
 
-**The process will be:**
+**The process will be:**  
 Build -> Write -> Publish -> Edit in public
 
 ## Contributions Wanted
