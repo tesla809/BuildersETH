@@ -6,10 +6,10 @@ Learn Web3 development from Zero to Mastery.
 
 As a result of this, we will connect devs to devs and build a community around building, innovation and mutual help.
 
-See the website:
+See the website:  \
 [Web3cryptodev.com](https://www.web3cryptodev.com/)
 
-Join our Discord:
+Join our Discord:  \
 [Web3cryptodev Discord](https://discord.gg/PqVhBKxSKb)
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/tesla809/BuildersETH/)
