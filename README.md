@@ -29,8 +29,9 @@ Move fast and break things. Content will be written and published quickly every 
 
 Then we will solicit community feedback through [issues](https://github.com/tesla809/BuildersETH) and [pull requests](https://github.com/tesla809/BuildersETH/pulls) for fixes.
 
-The work is **NOT** perfect. In fact, most of it needs heavy proof reading and will be edited over time.
+The work is **NOT** perfect. Most of it needs heavy proofreading and will be edited over time.
 
+**The process will be:**
 Build -> Write -> Publish -> Edit in public
 
 ## Contributions Wanted
@@ -44,70 +45,7 @@ Submit a [pull requests](https://github.com/tesla809/BuildersETH/pulls).
 
 Any and all feedback is appreciated <3!
 
-## Things to do - Turn to issues
-
-### Technical To Do list
-
-Move these to issues.
-
-- [x] Add Katex for Math equations
-- [x] Add Solidity syntax highlighting
-- [x] Add TypeScript syntax highlighting
-- [x] Scaffoled some basics items
-- [x] Add codesandbox/sandpack
-- [ ] Add typescript to sandpack
-- [ ] Add solc to sandpack
-- [ ] Figure out how to add assertions in client
-- [x] decide between monaco or CodeMirror 6
-  - [x] CodeMirror Wins! [Great assessment here](https://blog.replit.com/code-editors)
-  - [x] If CodeMirror 6 add [Solidty language support](https://github.com/alincode/codemirror-solidity)
-- [ ] Figure out how to add xTerm.js
-  - [ ] Wire inputs / outputs in xTerm.js
-  - [ ] Connect xterm.js to code editor some how
-  - [ ] figure out how to send instructions from both web3JS and Ethersjs
-- [ ] Start a DAO because why not?
-- [ ] Solve P vs NP
-- [ ] ... profit
-- [ ] retire to 3rd world country
-
-### Technical
-
-- [ ] Create project to serve as learning base. Maybe Kek NFTs like [CryptoPepes](https://cryptopepes.lol/)
-- [ ] Add basic solidity steps - beginner
-- [ ] Add web3js / etherjs steps
-
-### Research
-
-- [ ] See how [BUIDLGUIDL](https://buidlguidl.com/) does it.
-- [ ] Look into [html-to-react](https://www.npmjs.com/package/html-to-react) to help with turning code mirror 6 into React Code
-- [ ] Read [code mirror 6 docs](https://codemirror.net/doc/manual.html)
-- [ ] go thru [sample tutorial](https://www.raresportan.com/how-to-make-a-code-editor-with-codemirror6/)
-- [ ] Add newsletter via open source
-- [ ] add metrics to see engagement
-
-### Research parts
-
-So to make the Solidity parts fun to play with I will need:
-[ ] Code Editor - possibly Codemirror6
-[ ] terminal - possibly Codemirror6 or xTerm and node-pty
-[ ] possibly a runtime - ts-node
-[ ] ganache - to model / interact with local Ethereum network in browser
-
-#### To investigate
-
-[ ] [@ethereumjs/vm](https://www.npmjs.com/package/ethereumjs-vm-fork/v/5.5.3) - runs ethereum VM inside browser
-[ ] [Remix IDE package.json](https://github.com/ethereum/remix-project/blob/master/package.json) - Dumpster dive into Remix IDE to see how they have the EVM working inside of a stand along browser.
-[ ] [node-pty](https://www.npmjs.com/package/node-pty) - To allow NodeJS to interact with xTerm or Codemirror based terminal.
-[ ] [node-pty and xterm tutorial](https://www.youtube.com/watch?v=vhDBbbMJWoY) - example to do the above.
-[ ] [Ganache](https://trufflesuite.github.io/ganache/) - Ganache online IDE proof of concept.
-[ ] [Ganache](https://github.com/trufflesuite/ganache/blob/develop/docs/assets/js/inject-editor.js) - injected editor used by above proof of concept for Ganache.
-[ ] [node mirror](https://github.com/soliton4/nodeMirror) - an IDE in Node
-
-### Community
-
-- [ ] Get more fellow big brains to get down and buidl.
-
-## Boilerplate Mumbo Jumbo
+## Boilerplate
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
