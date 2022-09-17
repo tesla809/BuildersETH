@@ -123,8 +123,8 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/solidity",
+                label: "Contribute to Tutorials",
+                href: "https://github.com/tesla809/BuildersETH/projects",
               },
               {
                 label: "Discord",
