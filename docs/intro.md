@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-## Solidity
+## Goal
 
 **Our primary focus will be on creating practical content for Web3 developers.**
 
@@ -16,17 +16,23 @@ We will start with Solidity and:
 - give the reader the proper context on when and where to use certain tools for smart contract development.
 - Finally, relate to real-world projects which use these tools.
 
-As time progresses, we will increase the scope of our studies to other tools in web3.
+As time progresses, we will increase the scope of our studies to other tools in web3
 
-## Side Quests: Math
+## Community
+
+Learning a new skill set is fun, but requires constant practice and engagement. Learning with others in a community can turbocharge your progress.
+
+To find a community:
+
+- join our [Discord](https://discord.gg/PqVhBKxSKb)
+- join a meetup to meet others like [EthBuilders](https://www.meetup.com/ethbuilders/).
+- or find a meetup in your region via the [BUIDL Network](https://www.meetup.com/pro/buidl/).
+
+## Side Quest: Math
 
 Occasionally there will be some entries in the math section around Set Theory. The aim will be to build up the necessary knowledge to engage with Game Theory and later Mechanism Design. The goal is for these two tracks to converge, having robust proofs that can be ported over to Solidity code.
 
 When this happens is not known. But there are no royal roads to math. We will just have to take it a day at a time.
-
-## Considerations
-
-Consider this more of a series of study notes than a definitive guide. However, the aim is to challenge the author and the reader to understand this new paradigm. It is a paradigm shift that will affect all forms of social coordination: money, social organizations, culture, and identity itself.
 
 ## Contact
 
