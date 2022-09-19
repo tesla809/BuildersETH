@@ -1,25 +1,12 @@
 # Web3CryptoDev
 
-<html>
+<img src="static/img/launch-ethereum.png" alt="Web3CryptoDev Logo" width="200"/>
 
-<h2>🚀 Learn Web3 development from Zero to Mastery.</h2>
-
-<div style="clear: both;">
-  <div style="float: left; margin-right 1em;">
-  <img src="static/img/launch-ethereum.png" alt="Web3CryptoDev Logo" width="200"/>
-  </div>
-  <div>
-    <p>🎯 **Our goal:** Create a running series of guides covering Solidity and all things Web3 development aimed at developers.</p>
-    <p>As a result of this, we will connect devs to devs and build a community around building, innovation and mutual help.</p>
-  </div>
-</div>
-</html>
-
-<!-- 🚀 Learn Web3 development from Zero to Mastery.
+🚀 Learn Web3 development from Zero to Mastery.
 
 🎯 **Our goal:** Create a running series of guides covering Solidity and all things Web3 development aimed at developers.
 
-As a result of this, we will connect devs to devs and build a community around building, innovation and mutual help. -->
+As a result of this, we will connect devs to devs and build a community around building, innovation and mutual help.
 
 See the website: \
 [Web3cryptodev.com](https://www.web3cryptodev.com/)
