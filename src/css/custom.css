@@ -28,12 +28,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 html[data-theme="dark"] {
-  background-color: rgba(11, 1, 18, 0.9);
+  background-color: rgba(11, 1, 18, 1);
   /* background-color: rgba(11, 1, 18, 0.5); */
 }
 
 html[data-theme="dark"] navbar {
-  background-color: rgba(11, 1, 18, 0.5);
+  background-color: rgba(11, 1, 18, 1);
   /* background-color: rgba(11, 1, 18, 0.5); */
 }
 
