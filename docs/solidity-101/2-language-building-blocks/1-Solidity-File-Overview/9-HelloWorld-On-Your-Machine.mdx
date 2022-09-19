@@ -1,0 +1,61 @@
+---
+sidebar_position: 9
+---
+
+# HelloWorld.sol on Your Machine
+
+Let's create our `HelloWorld.sol` to a local development environment on our machine.
+
+## Setting Up Development Enivronment
+
+**Split into new file - Your first smart contract**
+
+First, let's create a new directory. Navigate to where you want to place your code and create a new directory, aka folder.
+
+`mkdir web3CryptoDev`
+`1-storageContract`
+
+Now lets create the project scaffold:
+`truffle init`
+
+Inside our newly created project we find a few files:
+
+```
+.
+├── contracts
+│   └── Migrations.sol
+├── migrations
+│   └── 1_initial_migration.js
+├── test
+└── truffle-config.js
+```
+
+### Directory Description
+
+#### Contracts
+
+`contracts` directory is where your smart contracts are stored.
+
+The default file is the `Migratons.sol`, which keeps a history of previously run migrations that is recorded on-chain.
+
+#### Migrations
+
+`migrations` directory files that helps you help you deploy contracts to the Ethereum network. Migration files are simply a set of managed deployment scripts. All the migrations located in this will run in the order listed, from 1 to N.
+
+The first script is `1_initial_migration.js` and is for the `Migration.sol`. In truffle, contract usually has its own migration script.
+
+So, `Apple.sol` would have `n-apple.sol` with `n` being the order you'd like to deploy it.
+
+We will learn more about migrations later.
+
+#### Test
+
+`test` folder holds our tests. Testing is EXTREMELY important in smart contract development, because they are technically immutable and can hold large sums of value. Along with testing [**fuzzing**](https://consensys.net/diligence/scribble/) is also a best practice.
+
+We will cover these topics later.
+
+#### truffle.config.js
+
+This holds the configuration for our project. Here we can customize the networks, network providers, and other things.
+
+You can learn more about [truffle.config.js here](https://trufflesuite.com/docs/truffle/reference/configuration/). We will be covering this later.

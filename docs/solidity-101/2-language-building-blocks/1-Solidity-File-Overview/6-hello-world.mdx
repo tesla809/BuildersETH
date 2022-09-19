@@ -1,0 +1,104 @@
+---
+sidebar_position: 6
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Hello, World!
+
+`Hello World!` is usually the first program we write when learning a new programming language.
+
+This simple contract contains a few concepts:
+
+- `pragma`
+- comments
+- licenses
+- `contract`
+
+We will go into each of these in-depth later.
+
+<Tabs>
+<TabItem value="sol" label="HelloWorld.sol">
+
+```solidity
+// SPDX-License-Identifier: MIT
+// compiler version must be greater than or equal to 0.8.13 and less than 0.9.0
+pragma solidity ^0.8.13;
+
+contract HelloWorld {
+    string public greetings = "Hello World!";
+}
+```
+
+</TabItem>
+</Tabs>
+
+## File extension
+
+This program is called: `HelloWorld.sol`. Solidity files, called contracts, end with the `.sol` extension.
+
+# Nameing Conventions
+
+Solidity contracts follow the PascalCase convention: the first letter capitalized, followed by each word.
+
+An exception is if the file is based on an acronym.
+
+`SampleFile.sol`  
+`ERC20.sol`  
+`MyToken.sol`
+
+## Comments
+
+Comments function similar to JavaScript.
+
+<Tabs>
+<TabItem value="sol" label="Comments.sol">
+
+```solidity
+// this is a single line comment
+
+/* this is a
+
+multi line comment
+*/
+```
+
+</TabItem>
+</Tabs>
+
+## Pragma - Define The Solidity Compiler Type
+
+```solidity
+pragma solidity 0.8.13;
+```
+
+`pragma` specifies the compiler verson of Solidity.
+
+## License
+
+```solidity
+// SPDX-License-Identifier: MIT
+```
+
+Every contract needs to specify the license which supports it.
+
+Licensing is essential because it stipulates how you can use a piece of code. Much of the open source software movement is based on legal innovations on very permissive licenses like [MIT License](https://choosealicense.com/licenses/mit/) and [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/).
+
+## Contract Keyword
+
+```solidity
+contract HelloWorld { ... }
+```
+
+Solidity is an object-oriented language. This means that it uses something like classes to structure information. For example, you can think of the keyword `Contract` as similar to the `class` keyword in other programming languages like C, Java, or JavaScript.
+
+## Variables
+
+```solidity
+string public greetings = "Hello World!";
+```
+
+Variables in Solidity are different than JavaScript. One of the differences is the need to define their data type and visibility up front.
+
+Data type represents the type of data. This reduces errors related to adding incorrect data types to variables. Visibility focuses on who can access the data.

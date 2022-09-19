@@ -1,0 +1,35 @@
+---
+sidebar_position: 8
+---
+
+# Licences
+
+Let's look at `HelloWorld.sol` again, and look into the licenses.
+
+<Tabs>
+<TabItem value="sol" label="HelloWorld.sol">
+
+```solidity
+// SPDX-License-Identifier: MIT
+// compiler version must be greater than or equal to 0.8.13 and less than 0.9.0
+pragma solidity ^0.8.13;
+
+contract HelloWorld {
+    string public greetings = "Hello World!";
+}
+```
+
+</TabItem>
+</Tabs>
+
+[Licenses](https://choosealicense.com/) can help direct the project toward the creator's aims, like the freedom to remix, but only if the base code is open-sourced. Or a more accessible approach like "do what you want". Used appropriately, they can limit the developer's liability should something go wrong with the code.
+
+Most licenses in the crypto are entirely open source. This allows for the reduction of headaches when dealing with code. If it is easy to deal with your code, more money may flow into it.
+
+Two of popular licences are the [MIT License](https://choosealicense.com/licenses/mit/) and [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/).
+
+Another is [Unlicense](https://choosealicense.com/licenses/unlicense/), which is basically like "so whatever you want with this".
+
+What if someone copies my code? Network effects, liquidity, and branding are better defensible moats to your project. This can be a topic for a future educational blog post.
+
+Note that none of this in this tutorial is legal advice and is written purely for educational purposes.

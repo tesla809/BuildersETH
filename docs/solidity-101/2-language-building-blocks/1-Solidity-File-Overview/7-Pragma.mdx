@@ -1,0 +1,83 @@
+---
+sidebar_position: 7
+---
+
+# Pragma: Choosing the Right Compiler
+
+Let's examine our `HelloWorld.sol` contract to focus on `pragma`.
+
+<Tabs>
+<TabItem value="sol" label="HelloWorld.sol">
+
+```solidity
+// SPDX-License-Identifier: MIT
+// compiler version must be greater than or equal to 0.8.13 and less than 0.9.0
+pragma solidity ^0.8.13;
+
+contract HelloWorld {
+    string public greetings = "Hello World!";
+}
+```
+
+</TabItem>
+</Tabs>
+
+As mentioned before, pragma lets the Solidity Compiler know which version of Solidity you are using. For this course, we will focus on Solidity `0.8.13`.
+
+Like all programming languages, Solidity is an evolving language. Over time, updates, bug fixes, and improvements make the languages easier and safer to use.
+
+It is essential to specify the version of the language used. The language is compiled into EVM bytecode, then run on the Ethereum Virtual Machine. Knowing which version to use lets the compiler know how to translate the code.
+
+### What is a Compiler
+
+A compiler is software that translates human-readable code into a lower-level form, usually machine-readable code. Compilers are helpful because they allow for high-level languages with valuable additions to make development easier.
+
+```solidity
+pragma solidity >=0.4.16 <0.9.0;
+```
+
+## Semver targeting
+
+Such a broad scope for the compiler can result in errors and uncaught bugs since such a wide range eliminates the ability to use the correct compiler predictable across development environments. For example, one developer may have `0.8.10`, while another may have `0.5.5`.
+
+We can specify the choose the version of the language using [semantic versioning (semver)](https://www.geeksforgeeks.org/introduction-semantic-versioning/).
+
+In [semantic versioning](https://www.geeksforgeeks.org/introduction-semantic-versioning/#:~:text=Semantic%20Versioning%20is%20a%203,and%20minor%20versions%20to%20zero.) (semver):
+
+- major versions: **x** -> **x**.yy.zz
+- minor versions: **y** -> x.**yy**.zz
+- patches: **z** -> x.yy.**zz**
+
+**Major:** break the API and are not backward compatible.  
+**Minor:** update the API and are backward compatible.  
+**Patches:** bug fixes.
+
+## Defining Pragma
+
+Using Semver and `pragma`, we can choose the correct compiler version. Solidity follows the semver syntax used by [npm](https://docs.npmjs.com/cli/v6/using-npm/semver).
+
+```solidity
+pragma solidity >=0.8.0 <0.9.0;
+// Anything between 0.8.0 to 0.9.0
+// where 0.9.0 is not included.
+
+pragma solidity ^0.8.5;
+// same as above
+// Anything above 0.8.0 to 0.9.0
+// where 0.9.0 is not included.
+
+pragma solidity ~0.8.5;
+// accept patches from 0.8.5 and up
+// patches are 0.00.xx
+
+pragma solidity 0.8.8;
+// ONLY version 0.8.8
+```
+
+## Pragma Best Practice
+
+When in doubt, choose one relatively recent version of Solidity only in the current major version. This is for two reasons.
+
+First, known bugs and errors from previous versions have been addressed, leading to safer code.
+
+Second, you will have fewer errors. The compiler is pretty strict about errors. Due to language updates, an older version of Solidity will throw more errors than the recent version.
