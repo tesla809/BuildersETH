@@ -2,7 +2,7 @@
 
 <img src="static/img/launch-ethereum.png" alt="Web3CryptoDev Logo" width="200"/>
 
-🚀 Learn Web3 development from Zero to Mastery.
+## 🚀 Learn Web3 development from Zero to Mastery.
 
 🎯 **Our goal:** Create a running series of guides covering Solidity and all things Web3 development aimed at developers.
 
