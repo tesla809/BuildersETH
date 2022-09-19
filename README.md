@@ -1,6 +1,6 @@
 # Web3CryptoDev
 
-![Web3CryptoDev Logo](static/img/launch-ethereum.png)
+<img src="static/img/launch-ethereum.png" alt="Web3CryptoDev Logo" width="200"/>
 
 🚀 Learn Web3 development from Zero to Mastery.
 
