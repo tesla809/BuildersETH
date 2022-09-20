@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbuilders_eth=self.webpackChunkbuilders_eth||[]).push([[2535],{5641:function(e){e.exports=JSON.parse('{"title":"All posts","items":[{"title":"DeFi Basics","permalink":"/blog/defi-basics"},{"title":"Welcome to Crypto","permalink":"/blog/welcome"},{"title":"Testing Features Blog","permalink":"/blog/testing-features-blog"}]}')}}]);
