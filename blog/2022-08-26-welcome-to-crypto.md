@@ -1,7 +1,7 @@
 ---
 slug: welcome
 title: Welcome to Crypto
-authors: [autist, capital]
+authors: [albertorio.eth]
 tags: [web3, crypto, wtf]
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: test-blog-post
+slug: defi-basics
 title: DeFi Basics
 authors: albertorio.eth
 tags: [defi, basics]
