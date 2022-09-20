@@ -1,7 +1,7 @@
 ---
 slug: test-blog-post
 title: DeFi Basics
-authors: autist
+authors: albertorio.eth
 tags: [defi, basics]
 ---
 
