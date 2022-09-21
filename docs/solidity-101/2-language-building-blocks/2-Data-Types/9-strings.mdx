@@ -1,0 +1,56 @@
+---
+sidebar_position: 3
+---
+
+# Strings
+
+Strings are a sequence of characters, either as a [literal constant](<https://en.wikipedia.org/wiki/Literal_(computer_programming)>) or as some kind of variable.
+
+In both Solidity and JavaScript, strings are immtuable. The word `"Hello"` is fixed. If you change it to `"Hello World"` is a totally different word.
+
+<Tabs>
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract Strings {
+    bool public str1 = "Hello, World";
+}
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```javascript
+class Strings {
+  let str = "Hello, World";
+}
+```
+
+</TabItem>
+</Tabs>
+
+### String escape characters
+
+There are escape characters as well. Note the capital letter `N` is a stand in, and can represent any character as defined in the description.
+
+With the exception of [hexadecimal represenation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates#hexadecimal_numbers), these are all the same in JavaScript.
+
+[Hexcadecimal values](https://www.techtarget.com/whatis/definition/hexadecimal) are base-16 number systems running from 0-9 and A-F. You probably have seen them while using CSS.
+
+| Syntax | Description                                                  |
+| ------ | ------------------------------------------------------------ |
+| \n     | Starts a new line.                                           |
+| \\     | Backslash                                                    |
+| \n     | Starts a new line.                                           |
+| \'     | Single Quote                                                 |
+| \"     | Double Quote                                                 |
+| \b     | Backspace                                                    |
+| \f     | Form Feed                                                    |
+| \r     | carriage return                                              |
+| \t     | tab                                                          |
+| \v     | vertical tab                                                 |
+| \xNN   | Represents hexadecimal values and inserts appropriate bytes. |
+| \uNNNN | Represents Unicode value and inserts UTF-8 sequence.         |

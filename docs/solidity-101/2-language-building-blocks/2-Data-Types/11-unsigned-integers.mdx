@@ -1,0 +1,28 @@
+---
+sidebar_position: 5
+---
+
+# Unsigned Integers
+
+uint stands for unsigned integer, meaning non negative integers
+
+<Tabs>
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract UnsignedIntegers {
+    // These are unsigned, meaning no negatives (-) value.
+    // So they are only positive (+)
+    uint8 public u8 = 1;
+    uint public u256 = 456;
+    uint public u = 123; // uint is short hand for uint256
+
+    uint public defaultUint; // 0
+}
+```
+
+</TabItem>
+</Tabs>

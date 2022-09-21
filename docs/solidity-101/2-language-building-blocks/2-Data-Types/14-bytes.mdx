@@ -1,0 +1,48 @@
+---
+sidebar_position: 13
+---
+
+# Bytes
+
+In Solidity, the data type byte represent a sequence of bytes.
+Solidity presents two type of bytes types :
+
+- fixed-sized byte arrays
+- dynamically-sized byte arrays.
+
+The term bytes in Solidity represents a dynamic array of bytes.
+It’s a shorthand for byte[].
+
+<Tabs>
+<TabItem value="sol" label="Solidity">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract MinMax {
+    // bytes
+    bytes1 a = 0xb5; //  [10110101]
+    bytes1 b = 0x56; //  [01010110]
+
+}
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```javascript
+class ArrayBuffer {
+    // create a buffer of 8 bytes
+    const buffer = new ArrayBuffer(8);
+    const view = new Int32Array(buffer);
+
+    // Learn more about ArrayBuffers here:
+    // https://javascript.info/arraybuffer-binary-arrays
+}
+```
+
+</TabItem>
+</Tabs>
+
+**Add more**
