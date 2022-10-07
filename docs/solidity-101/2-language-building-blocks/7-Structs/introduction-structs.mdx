@@ -4,4 +4,45 @@ sidebar_position: 1
 
 # Introduction
 
-Add stuff.
+## Summary
+
+Solidity offers a variety of data types, such as addresses, uints, bytes, strings, etc.
+
+Structs are a great way to store different data types together. You can think of a struct as an improved array, because regular arrays in Solidity only allow 1 data type.
+
+## Example
+
+We use the sample contract from our Storage Box smart contract, but we add a `struct` called `DataStruct` (mind the capital D):
+
+```solidity
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity 0.8.13;
+
+contract SimpleStorage {
+    
+    struct DataStruct {
+        uint storedData;
+        string message;
+    }
+
+    DataStruct data; //assign a name to the struct
+
+    function setStruct(uint _storedData, string memory _message) public { //our function now has 2 parameters
+       data = DataStruct(_storedData, _message); //push data to the DataStruct
+    }
+
+    function getDataStructMessage() public view returns (string memory) {
+        return data.message; //returns the string message from struct DataStruct
+    }
+
+    function getDataStructNumber() public view returns (uint) {
+        return data.storedData; //returns the uint storedData from struct DataStruct
+    }
+}
+```
+
+## Accessing the struct data
+
+In order to access the data inside the struct, we need to use the access operator `.`, like so: `structName.member`.<br />
+
+In our contract code, we used the structName `DataStruct`. The member name for the uint was `storedData`. The function `getDataStructNumber` was able to access and return the uint, because we used the . operator: `return data.storedData;`.
