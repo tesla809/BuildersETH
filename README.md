@@ -66,15 +66,23 @@ Play -> Learn -> Teach
 
 Have a topic you’d like to contribute or want to learn about?
 
-Learn about how to contribute via the [CONTRIBUTING.md](./CONTRIBUTING.md)
+### Content Roadmap
 
-Feel free to open an [issue](https://github.com/tesla809/BuildersETH/issues).
+Check out our [current content roadmap](https://github.com/users/tesla809/projects/1) to see what is coming soon or needs work.
 
-Want to submit to the blog, lesson, lesson fix, or image/logo?
+### Contributing
 
-Submit a [pull requests](https://github.com/tesla809/BuildersETH/pulls).
+Learn about how to contribute via the [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-Any and all feedback is appreciated <3!
+#### Suggestions
+
+Have a suggestion? Feel free to open an [issue](https://github.com/tesla809/BuildersETH/issues).
+
+#### Submissions
+
+Want to submit to the blog, lesson, lesson fix, or image/logo? Submit a [pull request](https://github.com/tesla809/BuildersETH/pulls) after submitting an issue.
+
+Any and all feedback is appreciated ❤️!
 
 ## 📄 Local Setup Instructions
 
