@@ -69,6 +69,9 @@ Since the project is new, we are keeping the process to contribute simple.
 
 The production version on Vercel reads from the build folder. Additionally, Docusaurus uses the `/build` as its master build.
 
+To [exclude a folder while checking](https://stackoverflow.com/questions/41701677/how-to-exclude-unwanted-folders-content-to-be-shown-when-i-execute-git-status) `git status` run:  
+`git status . -- ':!build'`
+
 ### 🏗️ Setting up your repo
 
 This workflow allows a growing community to contribute code in a way that scales. Many open source projects operate with a similar model.
