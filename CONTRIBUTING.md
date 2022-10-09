@@ -28,6 +28,10 @@ If you have any questions or need any additional information, please discuss in 
 
 ## ✨ How to Contribute
 
+### Check out Content Roadmap
+
+Check out our [current content roadmap](https://github.com/users/tesla809/projects/1) to see what is coming soon or needs work.
+
 ### Keeping it simple
 
 Since the project is new, we are keeping the process to contribute simple.
