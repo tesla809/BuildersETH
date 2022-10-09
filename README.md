@@ -12,7 +12,9 @@ See the website: \
 [Web3cryptodev.com](https://www.web3cryptodev.com/)
 
 Join our Discord: \
-[Web3cryptodev Discord](https://discord.gg/PqVhBKxSKb)
+[![Discord](https://img.shields.io/discord/1006939146109075467?label=Web3CryptoDev%20Discord&style=social)](https://discord.gg/PqVhBKxSKb)
+
+Want to contribute? Check out our [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/tesla809/BuildersETH/)
 
@@ -62,7 +64,11 @@ Play -> Learn -> Teach
 
 ## 🤝 Contributors Welcomed
 
-Have a topic you’d like to contribute or want to learn about? Feel free to open an [issue](https://github.com/tesla809/BuildersETH/issues).
+Have a topic you’d like to contribute or want to learn about?
+
+Learn about how to contribute via the [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+Feel free to open an [issue](https://github.com/tesla809/BuildersETH/issues).
 
 Want to submit to the blog, lesson, lesson fix, or image/logo?
 
