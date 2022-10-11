@@ -30,6 +30,8 @@ Inside our newly created project we find a few files:
 
 ### Directory Description
 
+Lets explore what each folder and file does.
+
 #### Contracts
 
 `contracts` directory is where your smart contracts are stored.
@@ -38,17 +40,17 @@ The default file is the `Migratons.sol`, which keeps a history of previously run
 
 #### Migrations
 
-`migrations` directory files that helps you help you deploy contracts to the Ethereum network. Migration files are simply a set of managed deployment scripts. All the migrations located in this will run in the order listed, from 1 to N.
+The `migrations` directory files that helps you help you deploy contracts to the Ethereum network. Migration files are simply a set of managed deployment scripts. All the migrations located in this will run in the order listed, from 1 to N.
 
-The first script is `1_initial_migration.js` and is for the `Migration.sol`. In truffle, contract usually has its own migration script.
+The first script is `1_initial_migration.js` and is for the `Migration.sol`. In Truffle, each contract usually has its own migration script.
 
-So, `Apple.sol` would have `n-apple.sol` with `n` being the order you'd like to deploy it.
+So, `Apple.sol` would have `n-apple.js` with `n` being the order you'd like to deploy it. If you'd like to deploy it first it would be named `2-apple.js`. Note that `1_initial_migration.js` goes first.
 
 We will learn more about migrations later.
 
 #### Test
 
-`test` folder holds our tests. Testing is EXTREMELY important in smart contract development, because they are technically immutable and can hold large sums of value. Along with testing [**fuzzing**](https://consensys.net/diligence/scribble/) is also a best practice.
+`test` folder holds our tests. Testing is EXTREMELY important in smart contract development, because they are technically immutable and can hold large sums of value. Along with testing [**fuzzing**](https://consensys.net/diligence/scribble/) is also a best practice. Fuzzing allows you to catch unknown unknowns in your contract, by throwing a million different things at it to see what breaks it.
 
 We will cover these topics later.
 
@@ -56,4 +58,175 @@ We will cover these topics later.
 
 This holds the configuration for our project. Here we can customize the networks, network providers, and other things.
 
-You can learn more about [truffle.config.js here](https://trufflesuite.com/docs/truffle/reference/configuration/). We will be covering this later.
+### A note on `truffle.config.js`
+
+We will be covering `truffle.config.js` more in depth later, as our needs evolve and we require greater customization.
+
+If you'd like, you can learn more about [truffle.config.js here](https://trufflesuite.com/docs/truffle/reference/configuration/).
+
+## Writing the Contract
+
+### Creating the Contract
+
+Now let's write our first smart contract on our local machine.
+
+Create a new file inside the contracts folder, with the following command:
+`truffle create contract HelloWorld`
+
+<Tabs>
+<TabItem value="sol" label="HelloWorld.sol">
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.13;
+
+contract HelloWorld {
+    string public greetings = "Hello World!";
+}
+```
+
+</TabItem>
+</Tabs>
+
+### Adjusting the Compiler and Compiling
+
+Let's configure our `truffle.config.js` to use `solidity 0.8.13`. Navigate to where the we find the `compilers` and update it to `0.8.13`
+
+```javascript
+  // Configure your compilers
+  compilers: {
+    solc: {
+      version: "0.8.13",    // changed from 0.8.11 or which ever version appears
+      // docker: true,      // Ignore this below
+      // settings: {
+      //  optimizer: {
+      //    enabled: false,
+      //    runs: 200
+      //  },
+      //  evmVersion: "byzantium"
+      // }
+    }
+  },
+```
+
+Next run the command in the terminal:  
+`truffle compile`
+
+## Build folder and the Application Binary Interface
+
+Notice our new directory: `build/.` The `build/` directory holds the glue between our Solidity smart contract and the JavaScript, which will connect to our code.
+
+This glue is called the "Application Binary Interface" or ABI. The ABI does this connecting by mapping our JavaScript to EVM bytecode. This way, when we interact with JavaScript, it knows where to interact on the Ethereum Blockchain. We generate our EVM bytecode from compiling Solidity. Another name for these is artifacts.
+
+Do not edit any ABI files in the `build/` directory. First, they will be overwritten upon any contract compilation and deployment. Also, they are essential to how Truffle works, so any edits may cause unintended errors.
+
+The name of the generated ABI `.json` files does not reflect the source file's name. Instead, they are the names of the contract definition.
+
+We have defined two contracts:
+
+- `HelloWorld.sol`
+- `Migrations.sol`
+
+However if `HelloWorld.sol` had two contract defintions, we would have three ABIs.
+
+Let's test this out by creating another contract in `HelloWorld.sol`.
+
+<Tabs>
+<TabItem value="sol" label="HelloWorld.sol">
+
+```solidity
+// SPDX-License-Identifier: MIT
+// compiler version must be greater than or equal to 0.8.13 and less than 0.9.0
+pragma solidity ^0.8.13;
+
+contract HelloWorld {
+    string public greetings = "Hello World!";
+}
+
+// new contract
+contract HelloAgain {
+  string public greetings = "Hello Again!";
+}
+```
+
+</TabItem>
+</Tabs>
+
+Let's compile the contract again:
+`truffle compile`
+
+Volia! Notice the `build/` has 3 artifacts (ABIs):
+
+- `HelloAgain.json`
+- `HelloWorld.json`
+- `Migrations.json`
+
+Notice the new ABI in the `/contracts` directory:
+
+```
+├── build
+│   └── contracts
+│       ├── HelloAgain.json < new ABI
+│       ├── HelloWorld.json
+│       └── Migrations.json
+├── contracts
+│   ├── HelloWorld.sol
+│   └── Migrations.sol
+├── migrations
+│   └── 1_initial_migration.js
+├── package-lock.json
+├── package.json
+├── test
+└── truffle-config.js
+```
+
+Often, `.sol` files may have more than one contract, simliar to how a JavaScript file can have more than one class.
+
+## Deploying the contract
+
+Congratulations! You have written your first smart contract! 🎉
+
+Now, lets deploy your contract on to a Ethereum network. To begin, let's deploy it to a local test network.
+
+A local test network is an instance of the Ethereum network that runs on your machine. This allows you quickly test your smart contracts without internet connection for fast iterations.
+
+To connect to a test network let's add the [Ganache](https://github.com/trufflesuite/ganache) local test network to the project.
+
+Ganache comes in two flavors, a command line interface (CLI) and a graphic user interace (GUI). We will begin to with using the CLI. Don't fret, once you use it for a few days, you will quickly understand it. We only need a few commands to get most of what we need when interacting with it.
+
+### Installing Ganache CLI
+
+To install Ganache CLI locally, navigate to your repo and run:  
+`npm install ganache`
+
+Start up Ganache create a new tab in your terminal:  
+`ganache`
+
+This will spin up a local blockchain for you. We will get into the details of what the output means a few lessons from now. For now, lets deploy our contract.
+
+### Deploying Your Contract
+
+Make sure your `network_id` is configured correclty for your local development port in `truffle.config.js`
+
+```javascript
+  // Configure your network
+  networks: {
+// ...
+    development: {
+      host: "127.0.0.1", // Localhost (default: none)
+      port: 8545, // Standard Ethereum port (default: none)
+      network_id: "*", // Any network (default: none)
+    },
+// ...
+  },
+```
+
+Make sure to have ganache running in another tab. If not the local blockchain will not be running.
+
+To start up ganache in a new terminal tab run:  
+`ganache`
+
+To deploy, in a seperate tab run:  
+`truffle migrate`
+
+Volia! You have deployed to your local chain!
