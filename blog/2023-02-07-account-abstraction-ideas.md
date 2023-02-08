@@ -12,7 +12,7 @@ I will be covering some ideas around Account Abstraction. This new tool is curre
 With Account Abstraction, we can adapt accounts to business logic needs instead of adapting business logic needs to accounts. 
 
 ### 🤫 The Secret: 
-The breakthrough is that Account abstraction allows organizations to create curated web3 experiences to smoothen onboarding, security, and retention. It's the holy trinity of usability. This means that we can have web2-like user experiences while maintaining web3 self-custody.
+The breakthrough is that Account Abstraction allows organizations to create curated web3 experiences to smoothen onboarding, security, and retention. It's the holy trinity of usability. This means that we can have web2-like user experiences while maintaining web3 self-custody.
 
 ### 🔍 The Deets: 
 By treating smart contract accounts at the same level as Externally Owned Accounts (EOA), we can break free from the EOA's hardcoded assumptions. Accounts are abstracted because now the implementation and the interface are decoupled, allowing for customizable accounts only limited by your imagination. 
@@ -31,13 +31,13 @@ An emerging primitive are [multi-signature smart contract based wallets](https:/
 
 If you'd like to experiment with Account Abstraction, give this [multi-signature wallet tutorial](https://github.com/tesla809/multisig-tutorial) a look and a star on GitHub. If you have questions, use the [Github Discussions](https://github.com/tesla809/multisig-tutorial/discussions) feature and start a chat!
 
-If you'd like to [deploy a multi-signature wallet using account abstraction check out zkSync](https://v2-docs.zksync.io/dev/tutorials/custom-aa-tutorial.html)! zkSync supports Account Abstractions natively!
+If you'd like to [deploy a multi-signature wallet using Account Abstraction check out zkSync](https://v2-docs.zksync.io/dev/tutorials/custom-aa-tutorial.html)! zkSync supports Account Abstractions natively!
 
 <!--truncate-->
 
 ## DApp Suggestions
 
-Here are some DApp suggestions which can help juice your imagination with some cool applications of account abstraction. These are centered around the three following concepts which need dire improvement in web3:
+Here are some DApp suggestions which can help juice your imagination with some cool applications of Account Abstraction. These are centered around the three following concepts which need dire improvement in web3:
 
 - **Security** to increase safety and self-custody for users
 - **Onboarding** to attract users and simplify interactions, reduced number of steps, or clicks.
@@ -46,7 +46,7 @@ Here are some DApp suggestions which can help juice your imagination with some c
 
 ### Improve Security
 
-You can improve **security using account abstractions** via:
+You can improve **security using Account Abstractions** via:
 
 - multi-factor authentication via any medium: Gmail, Google Auth, etc.
 
@@ -68,11 +68,11 @@ You can improve **security using account abstractions** via:
 
 - Innovations on vaults for safe storage: Deadman switches, account vaults for short-term assets to trade, and long-term assets to hold with different permissions. For example, add customizable default locks like a 1-week minimum lock for long-term assets to prevent stealing.
 
-- Multi-address model wallets: easily generate and manage a new account address for each new application using account abstraction.
+- Multi-address model wallets: easily generate and manage a new account address for each new application using Account Abstraction.
 
 ### Improve Onboarding
 
-You can improve **onboarding using account abstractions and Paymasters** via:
+You can improve **onboarding using Account Abstractions and Paymasters** via:
 
 - paying the gas fees for users with Paymasters.
 
@@ -88,7 +88,7 @@ You can improve **retention** via:
 
 - Using Paymasters to reward on-chain activity like paying fees or a percentage of fees for users that meet a certain threshold.
 
-- Using account abstraction to help increase the utility of assets.
+- Using Account Abstraction to help increase the utility of assets.
 
 
 ### Improve Referrals
