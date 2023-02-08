@@ -4,4 +4,66 @@ sidebar_position: 1
 
 # Introduction
 
-Add stuff.
+Functions work the same way as JavaScript functions.
+
+A [function signature](https://ethereum.stackexchange.com/questions/135205/what-is-a-function-signature-and-function-selector-in-solidity-and-evm-language) also known as a type signature, or method signature) defines input and output of functions or methods.
+
+```solidity
+// function signature 
+function add(uint x, uint y) external pure returns (uint)
+```
+
+ADD FUNCTION INFO
+```solidity
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity 0.8.13;
+
+contract Functions {
+    function add(uint x, uint y) external pure returns (uint) {
+      return x + y;
+    }
+    
+    function sub(uint x, uint y) external pure returns (uint) {
+      return x - y;
+    }
+}
+```
+
+In Solidity, function modifiers are used to change the behavior of a function by adding additional functionality or checks before or after the function is executed. 
+
+Some of the built-in modifiers in Solidity `0.8.17` include:
+
+`public`: 
+- makes the function visible to other contracts and external callers.
+`private`: 
+- makes the function only visible to the current contract and not to derived contracts.
+`internal`: makes the function only visible to the current contract and its derived contracts.
+`external`: makes the function only accessible to outside contract and its derived contracts.
+`view`: makes the function a read-only function that does not modify the state of the contract.
+`pure`: makes the function a read-only function that does not modify the state of the contract and does not depend on any external state.
+`constant`: same as `view`.
+`payable`: allows the function to receive ether (the cryptocurrency of the Ethereum blockchain).
+`nonpayable`: function that may not receive ether.
+
+Some function modifers are necessary to describe the basic functionality of the function like the following: 
+- `external` / `internal`
+- `public` / `private` 
+- `view` | `pure`
+
+Additionally, custom modifiers can also be defined and used in a contract. We will cover those in the next section.
+
+ADD THIS TO STUFF UP TOP
+`view`:
+- A read-only function. 
+- Doesn't modify the contract state data. Since no data is changed, calling these functions are free.
+- No state updates to the blockchain.
+- reads or uses data from contract.
+
+`pure`:
+- Just like `view`, but doesn't read any state variables data from contract.
+
+`external`:
+- Can only be called by outside callers, not from  functions inside the contract.
+
+`internal`
+- can only be called by internally functions inside the same contract.
