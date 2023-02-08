@@ -17,11 +17,11 @@ The aim of DeFi is to transform traditional financial products into reliable, pe
 
 DeFi protocols share three interesting characteristics among many:
 
-**Interoperability**: The ability to share data and work with each other
-**Composability**: money legos, aka they be used in different ways to create new things
-**Immutability**: the inability for the core logic to be changed, allowing for more trust.
-**Permissionless**: the ability to interact with a protocol without third party permission
-**Auditable**: the history of its activities can be investigated by anyone
+- **Interoperability**: The ability to share data and work with each other  
+- **Composability**: money legos, aka they be used in different ways to create new things  
+- **Immutability**: the inability for the core logic to be changed, allowing for more trust.  
+- **Permissionless**: the ability to interact with a protocol without third party permission  
+- **Auditable**: the history of its activities can be investigated by anyone  
 
 These properties give developers the ability to string together a series of protocols to create new and exciting applications.
 
@@ -35,3 +35,5 @@ DeFi also addresses issues in centralized finance related to:
 - Misaligned incentives
 
 DeFi apps aim to increase choice, innovation, access, efficiency, speed, transparency, auditability and autonomy while lowering the costs of doing business and reducing systemic risk from too big to fail entities. Anyone with an internet connection can access DeFi Apps and protocols, extending the internet of information to the “internet of value".
+
+
